@@ -11,9 +11,11 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Route exact path="/" component={Projects} />
-        <Route exact path="/articles" component={Articles} />
-        <Route exact path="/about" component={About} />
+        <div className="container">
+          <Route exact path="/" component={Projects} />
+          <Route exact path="/articles" component={Articles} />
+          <Route exact path="/about" component={About} />
+        </div>
       </div>
     </BrowserRouter>
   );
